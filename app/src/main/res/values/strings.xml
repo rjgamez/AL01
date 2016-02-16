@@ -11,13 +11,13 @@
     <string name="chat">Live Chat</string>
 
 
-
     <string name="navigation_drawer_open">Abrir menu de cajon</string>
     <string name="navigation_drawer_close">Cerrar menu de cajón</string>
 
-    <string name="nav_drawer_tandas">Mis tandas</string>
-    <string name="nav_drawer_crear">Crear nueva tanda</string>
-    <string name="nav_drawer_cuenta">Mi cuenta</string>
+    <string name="nav_drawer_tandas">Mis Tandas</string>
+    <string name="nav_drawer_ahorros">Mis Ahorros</string>
+    <string name="nav_drawer_create">Crear nueva Tanda</string>
+    <string name="nav_drawer_account">Mi Cuenta</string>
     <string name="nav_drawer_soport_msg">Necesitas ayuda?</string>
 
 
@@ -25,5 +25,55 @@
 
     <string name="action_settings">Ajustes</string>
 
+    <string name="TC_name">Nombre Tanda</string>
+    <string name="TC_folio">B6969</string>
+    <string name="TC_amount">$800</string>
+    <string name="TC_currency">pesos</string>
+    <string name="TC_payment">$200</string>
+
+    <string name="TC_invite_status">Invitación</string>
+    <string name="TC_pending_status">En espera</string>
+    <string name="TC_active_status">Activa</string>
+    <string name="TC_owe_status">Debes!</string>
+    <string name="TC_finished_status">Terminada</string>
+
+    <string name="TC_invite_msg_complete">para recibir $800 pesos en 13 dias el 19/feb</string>
+    <string name="TC_invite_msg1">para recibir </string>
+    <string name="TC_invite_msg2">$800 pesos</string>
+    <string name="TC_invite_msg3">en 13 dias </string>
+    <string name="TC_invite_msg4">el 19/feb</string>
+    <string name="TC_invite_action">Unirme</string>
+
+    <string name="TC_pending_msg_complete">para recibir $800 pesos en 13 dias el 19/feb</string>
+    <string name="TC_pending_msg1">para recibir </string>
+    <string name="TC_pending_msg2">$800 pesos</string>
+    <string name="TC_pending_msg3">en 13 dias </string>
+    <string name="TC_pending_msg4">el 19/feb</string>
+    <string name="TC_pending_action">Tu lugar ya reservado, motiva los demás!</string>
+
+    <string name="TC_active_before_msg_complete">recibirás $800 pesos en 13 dias el 19/feb</string>
+    <string name="TC_active_before_msg1">recibirás </string>
+    <string name="TC_active_before_msg2">$800 pesos</string>
+    <string name="TC_active_before_msg3">en 13 dias </string>
+    <string name="TC_active_before_msg4">el 19/feb</string>
+
+    <string name="TC_active_after_msg_complete">Felicidades!, recibiste $800 el 19/feb</string>
+    <string name="TC_active_after_msg1">Felicidades! </string>
+    <string name="TC_active_after_msg2">recibiste</string>
+    <string name="TC_active_after_msg3">$800 pesos </string>
+    <string name="TC_active_after_msg4">el 19/feb</string>
+
+    <string name="TC_owe_msg_complete">Recibiste $800 pesos el 5/feb/2016</string>
+    <string name="TC_owe_msg1">Recibiste $800 pesos</string>
+    <string name="TC_owe_msg2">el 5/feb/2016</string>
+    <string name="TC_owe_msg3">Aún Debes</string>
+    <string name="TC_owe_msg4">$250</string>
+    <string name="TC_owe_action">Aún debes $250 pesos</string>
+
+
+    <string name="TC_finished_msg_complete">El 5/feb/2016 recibiste $800 pesos</string>
+    <string name="TC_finished_msg1">El 5/feb/2016</string>
+    <string name="TC_finished_msg2">recibiste $800 pesos</string>
+    <string name="TC_finished_action">Sigue ahorrando!</string>
 
 </resources>
