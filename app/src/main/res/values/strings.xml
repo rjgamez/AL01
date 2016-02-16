@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AhorroLibre</string>
+    <string name="splash_screen_welcome">Bienvenido a</string>
+    <string name="splash_screen_lema">Es fácil ahorrar con amigos!</string>
+
+    <string name="no_tandas_message">Aun no tienes ninguna Tanda...</string>
+    <string name="creat_tanda">Crea tu primer Tanda!</string>
+
+    <string name="tel">(664)111-1638</string>
+    <string name="email">soporte@ahorrolibre.com</string>
+    <string name="chat">Live Chat</string>
+
+
+
+    <string name="navigation_drawer_open">Abrir menu de cajon</string>
+    <string name="navigation_drawer_close">Cerrar menu de cajón</string>
+
+    <string name="nav_drawer_tandas">Mis tandas</string>
+    <string name="nav_drawer_crear">Crear nueva tanda</string>
+    <string name="nav_drawer_cuenta">Mi cuenta</string>
+    <string name="nav_drawer_soport_msg">Necesitas ayuda?</string>
+
+
+    <string name="mensaje_chusco">Si no te gusta, cayese!... me la pelas</string>
+
+    <string name="action_settings">Ajustes</string>
+
+
+</resources>
