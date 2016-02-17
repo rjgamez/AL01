@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorAlLightGrey"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ahorrolibre.al01.MainActivity"
-    tools:showIn="@layout/app_bar_main">
-
-
-    <RelativeLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:background="@color/colorAlLightGrey"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:id="@+id/linearLayout_welcome">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/splash_screen_welcome"
-            android:textAppearance="?android:textAppearanceSmall"
-            android:textStyle="bold"
-            android:textColor="@color/colorAlBlue"
-            android:id="@+id/TextView_welcome"
-            />
-
-        <ImageView
-            android:src="@drawable/al_mainlogo"
-            android:layout_toRightOf="@id/TextView_welcome"
-            android:layout_toEndOf="@id/TextView_welcome"
-            android:contentDescription="@string/app_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:id="@+id/imageView_welcome"
-           />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4"
-        android:background="@color/colorAlLightBlue"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:id="@+id/RelativeLayout_create_new_tanda">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.ahorrolibre.al01.MainActivity"
+        tools:showIn="@layout/app_bar_main">
 
 
-        <TextView
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorAlLightGrey"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/linearLayout_welcome">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/splash_screen_welcome"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@color/colorAlBlue"
+                android:id="@+id/TextView_welcome"
+                />
+
+            <ImageView
+                android:src="@drawable/al_mainlogo"
+                android:layout_toRightOf="@id/TextView_welcome"
+                android:layout_toEndOf="@id/TextView_welcome"
+                android:contentDescription="@string/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:id="@+id/imageView_welcome"
+               />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:text="@string/no_tandas_message"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textStyle="bold"
-            android:textColor="@color/colorAlBlue"
-            android:id="@+id/textView_aun_no"
-            android:paddingTop="@dimen/text_padding"
-            android:paddingBottom="@dimen/text_padding"
-            />
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/colorAlLightBlue"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/RelativeLayout_create_new_tanda">
 
-        <Button
-            android:layout_width="120dp"
-            android:layout_below="@id/textView_aun_no"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAlOrange"
-            android:text="@string/creat_tanda"
-            android:id="@+id/button_new_tanda"
-            android:paddingTop="@dimen/text_padding"
-            android:paddingBottom="@dimen/text_padding"
 
-            />
+            <TextView
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/no_tandas_message"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:textColor="@color/colorAlBlue"
+                android:id="@+id/textView_aun_no"
+                android:paddingTop="@dimen/text_padding"
+                android:paddingBottom="@dimen/text_padding"
+                />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_below="@id/textView_aun_no"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAlOrange"
+                android:text="@string/creat_tanda"
+                android:id="@+id/button_new_tanda"
+                android:paddingTop="@dimen/text_padding"
+                android:paddingBottom="@dimen/text_padding"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/splash_screen_lema"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/colorAlBlue"/>
+
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="@string/splash_screen_lema"
-            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="Tienes dudas?"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10sp"
-            android:textColor="@color/colorAlBlue"/>
+            android:textColor="@color/colorAlBlue"
+            />
 
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:text="Tienes dudas?"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textStyle="bold"
-        android:textColor="@color/colorAlBlue"
-        />
-
-</LinearLayout>
+    </LinearLayout>
