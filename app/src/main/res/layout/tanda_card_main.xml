@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_invitex" />
+                    android:src="@drawable/ic_tc_invite" />
 
                 <!--Status text-->
                 <TextView
@@ -127,7 +127,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -167,7 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_pendingx" />
+                    android:src="@drawable/ic_tc_pending" />
 
                 <!--Status text-->
                 <TextView
@@ -257,7 +257,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -297,7 +297,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_activex" />
+                    android:src="@drawable/ic_tc_active" />
 
                 <!--Status text-->
                 <TextView
@@ -387,7 +387,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -427,7 +427,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_finishedx" />
+                    android:src="@drawable/ic_tc_finished" />
 
                 <!--Status text-->
                 <TextView
@@ -517,7 +517,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -557,7 +557,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_owex" />
+                    android:src="@drawable/ic_tc_owe" />
 
                 <!--Status text-->
                 <TextView
@@ -647,7 +647,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -687,7 +687,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_tc_activex" />
+                    android:src="@drawable/ic_tc_active" />
 
                 <!--Status text-->
                 <TextView
@@ -777,7 +777,7 @@
                     android:layout_centerVertical="true"
                     android:paddingTop="@dimen/text_padding"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_tc_detailsx" />
+                    android:src="@drawable/ic_tc_details" />
             </RelativeLayout>
 
         </LinearLayout>
