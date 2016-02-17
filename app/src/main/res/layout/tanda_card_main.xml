@@ -1,173 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--TANDA CARD (TC) LIST-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-  <LinearLayout
-      android:id="@+id/TC_invite"
-      android:layout_width="match_parent"
-      android:layout_height="@dimen/TC_height_line">
-
+    <!-- TC -INVITE
+           This first LinearLayout draws the line between cards..
+           height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height"
-        android:background="@color/colorAlLightGrey"
-        >
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="@dimen/TC_status_width"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0"
-                android:layout_weight="1"
-                />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="50"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_TC_invite"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/TC_status_invite"
-                android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0"
-                android:layout_weight="1"
-                />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView_tanda_name"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/TC_message_name_height"
-                android:padding="@dimen/text_padding"
-                android:text="@string/TC_name"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <TextView
-                android:id="@+id/textView_tanda_name"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:padding="@dimen/text_padding"
-                android:text="@string/TC_invite_msg_complete"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-
-                />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="@dimen/TC_action_width"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/TC_message_name_height"
-                android:paddingRight="@dimen/text_padding"
-                android:paddingTop="@dimen/text_padding"
-                android:text="@string/TC_amount"
-                android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-
-                <Button
-                    android:id="@+id/TC_action_join_button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@color/colorAlOrange"
-                    android:text="@string/TC_invite_action" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-  </LinearLayout>
-
-
-
-
-    <LinearLayout
-        android:id="@+id/TC_pending"
+        android:id="@+id/TC_invite"
         android:layout_width="match_parent"
         android:layout_height="@dimen/TC_height_line">
 
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
             android:background="@color/colorAlLightGrey"
-            >
+            android:orientation="horizontal">
 
+            <!--This is the Status section-->
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="@dimen/TC_status_width"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
+                <!--Blank text view used for top positioning "padding"-->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="0"
-                    android:layout_weight="1"
-                    />
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
 
+                <!--Status icon-->
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="50"
+                    android:layout_height="@dimen/TC_status_ic_height"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_TC_pending"
-                    />
+                    android:src="@drawable/ic_TC_invite" />
 
+                <!--Status text-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/TC_status_pending"
+                    android:text="@string/TC_status_invite"
                     android:textAlignment="center"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
+                <!--Blank text view used for bottom positioning "padding"-->
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="0"
-                    android:layout_weight="1"
-                    />
-
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
+            <!--This is the Message section-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <!--Message tanda name-->
                 <TextView
                     android:id="@+id/textView_tanda_name"
                     android:layout_width="match_parent"
@@ -176,24 +71,25 @@
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
+                <!--Message additional info-->
                 <TextView
                     android:id="@+id/textView_tanda_name"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:padding="@dimen/text_padding"
-                    android:text="@string/TC_pending_msg_complete"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-
-                    />
+                    android:text="@string/TC_invite_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
             </LinearLayout>
 
+            <!--This is the Action section-->
             <LinearLayout
                 android:layout_width="@dimen/TC_action_width"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <!--Action amount-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
@@ -203,23 +99,698 @@
                     android:textAlignment="center"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
+                <!--Action Button layout-->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1">
 
-
-                    <TextView
+                    <!--Action Join button-->
+                    <Button
+                        android:id="@+id/TC_action_join_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:textAppearance="?android:attr/textAppearanceSmall"
-                        android:text="@string/TC_pending_action"
-                        android:paddingLeft="@dimen/text_padding"/>
-
+                        android:background="@color/colorAlOrange"
+                        android:text="@string/TC_invite_action" />
                 </RelativeLayout>
 
             </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TC -PENDING
+           This first LinearLayout draws the line between cards..
+           height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
+    <LinearLayout
+        android:id="@+id/TC_pending"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            android:orientation="horizontal">
+
+            <!--This is the Status section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Blank text view used for top positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--Status icon-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_status_ic_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_pending" />
+
+                <!--Status text-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_pending"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!--Blank text view used for bottom positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!--This is the Message section-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Message tanda name-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!--Message additional info-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_pending_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!--This is the Action section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Action amount-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!--Action Button layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--Action Message-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/text_padding"
+                        android:textAlignment="center"
+                        android:text="@string/TC_pending_action"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TC -ACTIVE_BEFORE
+       This first LinearLayout draws the line between cards..
+       height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
+    <LinearLayout
+        android:id="@+id/TC_active_before"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            android:orientation="horizontal">
+
+            <!--This is the Status section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Blank text view used for top positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--Status icon-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_status_ic_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_active" />
+
+                <!--Status text-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_active"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!--Blank text view used for bottom positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!--This is the Message section-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Message tanda name-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!--Message additional info-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_active_before_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!--This is the Action section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Action amount-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!--Action Button layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--Action Message-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/text_padding"
+                        android:textAlignment="center"
+                        android:text="@string/TC_active_before_action"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TC -OWE
+          This first LinearLayout draws the line between cards..
+          height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
+    <LinearLayout
+        android:id="@+id/TC_owe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            android:orientation="horizontal">
+
+            <!--This is the Status section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Blank text view used for top positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--Status icon-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_status_ic_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_owe" />
+
+                <!--Status text-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_owe"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!--Blank text view used for bottom positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!--This is the Message section-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Message tanda name-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!--Message additional info-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_owe_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!--This is the Action section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Action amount-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!--Action Button layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--Action Message-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/text_padding"
+                        android:textAlignment="center"
+                        android:text="@string/TC_owe_action"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TC -FINISHED
+        This first LinearLayout draws the line between cards..
+        height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
+    <LinearLayout
+        android:id="@+id/TC_finished"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            android:orientation="horizontal">
+
+            <!--This is the Status section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Blank text view used for top positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--Status icon-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_status_ic_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_finished" />
+
+                <!--Status text-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_finished"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!--Blank text view used for bottom positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!--This is the Message section-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Message tanda name-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!--Message additional info-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_finished_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!--This is the Action section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Action amount-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!--Action Button layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--Action Message-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/text_padding"
+                        android:textAlignment="center"
+                        android:text="@string/TC_finished_action"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- TC -ACTIVE_AFTER
+        This first LinearLayout draws the line between cards..
+        height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
+    <LinearLayout
+        android:id="@+id/TC_active_after"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
+              Status / Message / Action / Details-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            android:orientation="horizontal">
+
+            <!--This is the Status section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Blank text view used for top positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--Status icon-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_status_ic_height"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_active" />
+
+                <!--Status text-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_active"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <!--Blank text view used for bottom positioning "padding"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!--This is the Message section-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--Message tanda name-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <!--Message additional info-->
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_active_after_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+            <!--This is the Action section-->
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Action amount-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <!--Action Button layout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <!--Action Message-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/text_padding"
+                        android:textAlignment="center"
+                        android:text="@string/TC_active_after_action"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--This is the Details section    -->
+            <RelativeLayout
+                android:layout_width="@dimen/TC_details_width"
+                android:layout_height="match_parent">
+
+                <!--This is the details arrow image-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_details_arrow_height"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="@dimen/text_padding"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_TC_details" />
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -227,3 +798,4 @@
 
 
 </LinearLayout>
+
