@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/TC_invite"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/TC_height_line">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height"
+        android:background="@color/colorAlLightGrey"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/TC_status_width"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_TC_invite"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TC_status_invite"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_tanda_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/TC_message_name_height"
+                android:padding="@dimen/text_padding"
+                android:text="@string/TC_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textView_tanda_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/text_padding"
+                android:text="@string/TC_invite_msg_complete"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/TC_action_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/TC_message_name_height"
+                android:paddingRight="@dimen/text_padding"
+                android:paddingTop="@dimen/text_padding"
+                android:text="@string/TC_amount"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <Button
+                    android:id="@+id/TC_action_join_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorAlOrange"
+                    android:text="@string/TC_invite_action" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/TC_pending"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TC_height_line">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height"
+            android:background="@color/colorAlLightGrey"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/TC_status_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_TC_pending"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TC_status_pending"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_name"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/textView_tanda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/text_padding"
+                    android:text="@string/TC_pending_msg_complete"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/TC_action_width"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/TC_message_name_height"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
+                    android:text="@string/TC_amount"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/TC_pending_action"
+                        android:paddingLeft="@dimen/text_padding"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
