@@ -53,7 +53,7 @@
     <string name="TC_active_before_msg4">el 19/feb</string>
     <string name="TC_active_before_action">Detalles</string>
 
-    <string name="TC_active_after_msg_complete">Felicidades!, recibiste el 26/feb/2016</string>
+    <string name="TC_active_after_msg_complete">Felicidades!, recibiste el 26/feb</string>
     <string name="TC_active_after_msg1">Felicidades! </string>
     <string name="TC_active_after_msg2">recibiste</string>
     <string name="TC_active_after_msg3">$800 pesos </string>
@@ -71,7 +71,7 @@
     <string name="TC_finished_msg_complete">El 5/feb/2016 recibiste $800 pesos</string>
     <string name="TC_finished_msg1">El 5/feb/2016</string>
     <string name="TC_finished_msg2">recibiste $800 pesos</string>
-    <string name="TC_finished_action">Sigue ahorrando!</string>
+    <string name="TC_finished_action">Sigue ahorrando</string>
 
     <string name="TC_status_invite">Estas invitado</string>
     <string name="TC_status_pending">En espera</string>
