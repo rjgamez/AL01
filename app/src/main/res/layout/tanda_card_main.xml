@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?><!--TANDA CARD (TC) LIST-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_gravity="right">
 
-    <!-- TC -INVITE
-           This first LinearLayout draws the line between cards..
-           height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
     <LinearLayout
-        android:id="@+id/TC_invite"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
+        android:layout_height="match_parent"
+        android:background="@color/colorAlWhite"
+        android:orientation="vertical">
 
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
+        <!-- TC -INVITE
+                This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -66,7 +67,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -132,22 +135,21 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
 
-    <!-- TC -PENDING
-           This first LinearLayout draws the line between cards..
-           height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
-    <LinearLayout
-        android:id="@+id/TC_pending"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
+        <!-- TC -PENDING
+          This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
 
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -196,7 +198,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -262,22 +266,20 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
 
-    <!-- TC -ACTIVE_BEFORE
-       This first LinearLayout draws the line between cards..
-       height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
-    <LinearLayout
-        android:id="@+id/TC_active_before"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
-
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
+        <!-- TC -ACTIVE_BEFORE
+           This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -326,7 +328,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -392,22 +396,20 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
 
-    <!-- TC -FINISHED
-        This first LinearLayout draws the line between cards..
-        height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
-    <LinearLayout
-        android:id="@+id/TC_finished"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
-
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
+        <!-- TC -FINISHED
+            This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -456,7 +458,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -522,22 +526,20 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
 
-    <!-- TC -OWE
-          This first LinearLayout draws the line between cards..
-          height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
-    <LinearLayout
-        android:id="@+id/TC_owe"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
-
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
+        <!-- TC -OWE
+              This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -586,7 +588,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -652,22 +656,20 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
 
-    <!-- TC -ACTIVE_AFTER
-        This first LinearLayout draws the line between cards..
-        height of this line is the diff between [@dime/TC_height_line] - [@dimen/TC_height] -->
-    <LinearLayout
-        android:id="@+id/TC_active_after"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/TC_height_line">
-
-        <!--This LinearLayout is the TC itself formed by 4 horizontal sections
-              Status / Message / Action / Details-->
+        <!-- TC -ACTIVE_AFTER
+            This LinearLayout is the TC itself formed by 4 horizontal sections
+                  Status / Message / Action / Details-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height"
-            android:background="@color/colorAlLightGrey"
+            android:background="@color/colorTandaCardBackground"
             android:orientation="horizontal">
 
             <!--This is the Status section-->
@@ -716,7 +718,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/TC_message_name_height"
-                    android:padding="@dimen/text_padding"
+                    android:paddingLeft="@dimen/text_padding"
+                    android:paddingRight="@dimen/text_padding"
+                    android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -782,8 +786,13 @@
 
         </LinearLayout>
 
+        <!--Separator line at bottom of each TC-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TC_height_line"
+            android:layout_marginLeft="@dimen/TC_status_width"
+            android:background="@color/colorTandaCardLine"></View>
+
+
     </LinearLayout>
-
-
-</LinearLayout>
-
+</ScrollView>
