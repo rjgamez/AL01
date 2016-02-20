@@ -3,8 +3,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="right">
+    android:layout_height="match_parent">
+    <!--android:layout_gravity="right">-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -140,7 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
         <!-- TC -PENDING
           This LinearLayout is the TC itself formed by 4 horizontal sections
@@ -271,7 +271,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
         <!-- TC -ACTIVE_BEFORE
            This LinearLayout is the TC itself formed by 4 horizontal sections
@@ -401,7 +401,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
         <!-- TC -FINISHED
             This LinearLayout is the TC itself formed by 4 horizontal sections
@@ -531,7 +531,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
         <!-- TC -OWE
               This LinearLayout is the TC itself formed by 4 horizontal sections
@@ -661,7 +661,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
         <!-- TC -ACTIVE_AFTER
             This LinearLayout is the TC itself formed by 4 horizontal sections
@@ -731,7 +731,7 @@
                     android:layout_weight="1"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_active_after_msg_complete"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
 
             </LinearLayout>
 
@@ -791,7 +791,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/TC_height_line"
             android:layout_marginLeft="@dimen/TC_status_width"
-            android:background="@color/colorTandaCardLine"></View>
+            android:background="@color/colorTandaCardLine"/>
 
 
     </LinearLayout>
