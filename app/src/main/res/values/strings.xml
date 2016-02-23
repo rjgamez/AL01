@@ -7,6 +7,7 @@
     <string name="creat_tanda">Crea tu primer Tanda!</string>
 
     <string name="tel">(664)111-1638</string>
+    <string name="sms">Mándanos un texto SMS</string>
     <string name="email">soporte@ahorrolibre.com</string>
     <string name="chat">Live Chat</string>
 
@@ -24,6 +25,7 @@
     <string name="mensaje_chusco">Si no te gusta, cayese!... me la pelas</string>
 
     <string name="action_settings">Ajustes</string>
+    <string name="action_logout">LogOff</string>
 
     <string name="TC_name">Nombre Tanda</string>
     <string name="TC_folio">B6969</string>

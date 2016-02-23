@@ -20,7 +20,7 @@
     <dimen name="TC_details_arrow_height">20dp</dimen>
 
 
-    <dimen name="TC_message_name_height">wrap_content</dimen>
+    <dimen name="TC_message_name_height">36dp</dimen>
 
 
 </resources>

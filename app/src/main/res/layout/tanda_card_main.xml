@@ -69,6 +69,7 @@
                     android:layout_height="@dimen/TC_message_name_height"
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
+                    android:maxLines="1"
                     android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -78,6 +79,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_invite_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -200,6 +202,7 @@
                     android:layout_height="@dimen/TC_message_name_height"
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
+                    android:maxLines="1"
                     android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -209,6 +212,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_pending_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -330,6 +334,7 @@
                     android:layout_height="@dimen/TC_message_name_height"
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
+                    android:maxLines="1"
                     android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -339,6 +344,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_active_before_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -460,6 +466,7 @@
                     android:layout_height="@dimen/TC_message_name_height"
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
+                    android:maxLines="1"
                     android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -469,6 +476,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_finished_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -591,6 +599,7 @@
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
                     android:paddingTop="@dimen/text_padding"
+                    android:maxLines="1"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -599,6 +608,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
+                    android:maxLines="2"
                     android:padding="@dimen/text_padding"
                     android:text="@string/TC_owe_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -720,6 +730,7 @@
                     android:layout_height="@dimen/TC_message_name_height"
                     android:paddingLeft="@dimen/text_padding"
                     android:paddingRight="@dimen/text_padding"
+                    android:maxLines="1"
                     android:paddingTop="@dimen/text_padding"
                     android:text="@string/TC_name"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -730,6 +741,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:padding="@dimen/text_padding"
+                    android:maxLines="2"
                     android:text="@string/TC_active_after_msg_complete"
                     android:textAppearance="?android:attr/textAppearanceMedium"/>
 

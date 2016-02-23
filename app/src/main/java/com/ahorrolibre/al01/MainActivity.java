@@ -1,5 +1,7 @@
 package com.ahorrolibre.al01;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -87,10 +89,50 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_profile) {
 
         } else if (id == R.id.nav_call) {
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:6641517772"));
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
+
+        } else if (id == R.id.nav_sms) {
+
+            Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+            smsIntent.setType("vnd.android-dir/mms-sms");
+            smsIntent.putExtra("address", "6641517772");
+            smsIntent.putExtra("sms_body","vale madre este app!");
+            startActivity(smsIntent);
+            if (smsIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(smsIntent);
+
+            }
 
         } else if (id == R.id.nav_email) {
 
+            Intent intent = new Intent(Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+            intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"rafa@ahorrolibre.com"});
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Pregunta del AhorroLIbre App");
+            intent.putExtra(Intent.EXTRA_TEXT, "Estoy usando el Android App de AhorroLibre"+"\ntengo una pregunta:");
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
+
+//            Intent intent = new Intent(Intent.ACTION_SEND);
+//            intent.setType("*/*");
+//            intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"rafa@ahorrolibre.com"});
+//            intent.putExtra(Intent.EXTRA_SUBJECT, "Pregunta del AhorroLibre App");
+//            intent.putExtra(Intent.EXTRA_TEXT, "Estoy usando el Android App de AhorroLibre"+"\ntengo una pregunta:");
+//            if (intent.resolveActivity(getPackageManager()) != null) {
+//                startActivity(intent);
+//            }
+
         } else if (id == R.id.nav_chat) {
+            Uri webpage = Uri.parse("https://www.ahorrolibre.com");
+            Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivity(intent);
+            }
 
         }
 

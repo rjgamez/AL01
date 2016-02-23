@@ -7,24 +7,33 @@
     android:background="@color/colorAlWhite"
     app:theme="@style/AppTheme.NoActionBar">
 
-    <View
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textSize="24sp"
+android:textAlignment="center"
+        android:padding="@dimen/text_padding"
+        android:text="No tienes Datos"
+        />
 
     <ImageView
-        android:src="@drawable/symbol_mega"
-        android:contentDescription="@string/app_name"
+        android:src="@drawable/monito_awitado"
+        android:contentDescription="You have no data"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:padding="@dimen/fab_margin"
         android:scaleType="fitCenter"
         android:id="@+id/imageView_welcome"
         />
 
-    <View
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="@dimen/text_padding"
+        android:text="Conectate para poder mostrar tu info!"
         android:layout_weight="1"/>
 
 </LinearLayout>
