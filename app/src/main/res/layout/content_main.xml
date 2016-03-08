@@ -15,12 +15,10 @@
         tools:showIn="@layout/app_bar_main">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
             android:id="@+id/linearLayout_welcome">
 
             <TextView
@@ -30,20 +28,19 @@
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textStyle="bold"
                 android:textColor="@color/colorAlBlue"
+                android:paddingRight="@dimen/text_padding"
                 android:id="@+id/TextView_welcome"
                 />
 
             <ImageView
                 android:src="@drawable/al_mainlogo"
-                android:layout_toRightOf="@id/TextView_welcome"
-                android:layout_toEndOf="@id/TextView_welcome"
                 android:contentDescription="@string/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="fitCenter"
                 android:id="@+id/imageView_welcome"
                />
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,8 +78,7 @@
                 android:textAppearance="?android:textAppearanceLarge"
                 android:text="@string/creat_tanda"
                 android:id="@+id/button_new_tanda"
-                android:paddingTop="@dimen/text_padding"
-                android:paddingBottom="@dimen/text_padding"
+                android:padding="@dimen/text_padding"
                 android:layout_margin="@dimen/fab_margin"
                 android:textColor="@color/colorAlWhite"
 

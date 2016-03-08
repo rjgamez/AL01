@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity
 
             Intent smsIntent = new Intent(Intent.ACTION_VIEW);
             smsIntent.setType("vnd.android-dir/mms-sms");
-            smsIntent.putExtra("address", "6641517772");
-            smsIntent.putExtra("sms_body","vale madre este app!");
+            smsIntent.putExtra("address", "6641111638");
+            smsIntent.putExtra("sms_body","Pregunta para AhorroLibre..");
             startActivity(smsIntent);
             if (smsIntent.resolveActivity(getPackageManager()) != null) {
                 startActivity(smsIntent);
