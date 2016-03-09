@@ -24,7 +24,10 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //PREGUNTA ALEX , que podemos hacer con el Floating Action button?
+        // pudiera ser un boton que solo sale cuanto tienes tandas pendientes por aceptar?
+        // "Acepta la invitacion".. si presionas te sale un pop up con la info de la tanda que estas por aceptar
+        // Si aceptas y aun tienes otras invitaciones pendientes por aceptar sigue flotando.. SOLO desaparece cuando no tienes tandas por aceptar
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,7 +102,7 @@ public class MainActivity extends AppCompatActivity
 
             Intent smsIntent = new Intent(Intent.ACTION_VIEW);
             smsIntent.setType("vnd.android-dir/mms-sms");
-            smsIntent.putExtra("address", "6641111638");
+            smsIntent.putExtra("address", "6643471607"); //TODO change to 6641111638
             smsIntent.putExtra("sms_body","Pregunta para AhorroLibre..");
             startActivity(smsIntent);
             if (smsIntent.resolveActivity(getPackageManager()) != null) {
@@ -111,21 +114,13 @@ public class MainActivity extends AppCompatActivity
 
             Intent intent = new Intent(Intent.ACTION_SENDTO);
             intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-            intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"rafa@ahorrolibre.com"});
+            intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"rafa@ahorrolibre.com"}); //TODO change to soporte@ahorrolibre.com
             intent.putExtra(Intent.EXTRA_SUBJECT, "Pregunta del AhorroLIbre App");
             intent.putExtra(Intent.EXTRA_TEXT, "Estoy usando el Android App de AhorroLibre"+"\ntengo una pregunta:");
             if (intent.resolveActivity(getPackageManager()) != null) {
                 startActivity(intent);
             }
 
-//            Intent intent = new Intent(Intent.ACTION_SEND);
-//            intent.setType("*/*");
-//            intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"rafa@ahorrolibre.com"});
-//            intent.putExtra(Intent.EXTRA_SUBJECT, "Pregunta del AhorroLibre App");
-//            intent.putExtra(Intent.EXTRA_TEXT, "Estoy usando el Android App de AhorroLibre"+"\ntengo una pregunta:");
-//            if (intent.resolveActivity(getPackageManager()) != null) {
-//                startActivity(intent);
-//            }
 
         } else if (id == R.id.nav_chat) {
             Uri webpage = Uri.parse("https://www.ahorrolibre.com");

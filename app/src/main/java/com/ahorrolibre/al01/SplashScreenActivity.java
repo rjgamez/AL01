@@ -5,20 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 
-public class TestActivity extends AppCompatActivity
+public class SplashScreenActivity extends AppCompatActivity
 {
-
-  /*  @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_screen);
-
-
-
-
-
-    }*/
-
 
     private Thread thread;
 
@@ -27,7 +15,9 @@ public class TestActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-      //  final MyActivity myActivity = this;
+      // PREGUNTA ALEX.. no entiendo porque el stackoverflow tenia este codigo
+      // final MyActivity myActivity = this;
+        //un Synchronizaiton on a non-final field 'thread' warning
 
         thread=  new Thread(){
             @Override
@@ -37,6 +27,7 @@ public class TestActivity extends AppCompatActivity
                         wait(2000);
                     }
                 }
+                //PREGUNTA ALEX, me salen un Empty 'catch' block warning aqui
                 catch(InterruptedException ex){
                 }
 
@@ -52,6 +43,7 @@ public class TestActivity extends AppCompatActivity
     {
         if(evt.getAction() == MotionEvent.ACTION_DOWN)
         {
+            //PREGUNTA ALEX, me salen un Synchronization on a non-final field 'thread'
             synchronized(thread){
                 thread.notifyAll();
             }
@@ -60,15 +52,11 @@ public class TestActivity extends AppCompatActivity
         return true;
     }
 
-    public void continueToMain (){
-
+    private void continueToMain (){
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
-
-        /*Intent cambio = new Intent(this, MainActivity.class);
-        startActivity(cambio);*/
     }
 
 }
