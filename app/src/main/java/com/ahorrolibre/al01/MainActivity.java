@@ -14,6 +14,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+
+//PREGUNTA ALEX... when compiling the Gradle console shows 2 notes.. what's up with this?
+//Note: /Users/Rafa/AndroidStudioProjects/AL01/app/src/main/java/com/ahorrolibre/al01/MainActivityFragment.java uses or overrides a deprecated API.
+//Note: Recompile with -Xlint:deprecation for details.
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
