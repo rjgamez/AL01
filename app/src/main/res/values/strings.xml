@@ -26,6 +26,7 @@
 
     <string name="action_settings">Ajustes</string>
     <string name="action_logout">LogOff</string>
+    <string name="action_refresh">refresh</string>
 
     <string name="TC_name">Nombre Tanda</string>
     <string name="TC_folio">B6969</string>
