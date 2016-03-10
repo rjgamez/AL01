@@ -81,6 +81,7 @@
     <string name="TC_status_active">Activa</string>
     <string name="TC_status_owe">Debes</string>
     <string name="TC_status_finished">Terminó</string>
+    <string name="title_activity_tanda_detail">TandaDetailActivity</string>
 
 
 </resources>
