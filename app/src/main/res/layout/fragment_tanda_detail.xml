@@ -6,8 +6,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ahorrolibre.al01.TandaDetailActivityFragment"
-    tools:showIn="@layout/activity_tanda_detail">
+    tools:context="com.ahorrolibre.al01.TandaDetailActivity$PlaceholderFragment"
+    >
+    <!--tools:showIn="@layout/activity_tanda_detail"-->
 
         <TextView
             android:text="Hello"
