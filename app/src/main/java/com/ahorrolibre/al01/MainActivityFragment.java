@@ -1,6 +1,7 @@
 package com.ahorrolibre.al01;
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -63,6 +64,11 @@ public class MainActivityFragment extends Fragment {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText(getActivity(), "Presionaste Settings", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (id == R.id.action_logout) {
+            Toast.makeText(getActivity(), "Presionaste Log-out", Toast.LENGTH_SHORT).show();
             return true;
         }
         else if (id == R.id.action_refresh) {
@@ -121,7 +127,9 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
             String tanda = mTandacardAdapter.getItem(position);
-                Toast.makeText(getActivity(), tanda, Toast.LENGTH_SHORT).show();
+                Intent intent= new Intent(getActivity(), TandaDetailActivity.class)
+                        .putExtra(Intent.EXTRA_TEXT,tanda);
+                startActivity(intent);
             }
         });
 

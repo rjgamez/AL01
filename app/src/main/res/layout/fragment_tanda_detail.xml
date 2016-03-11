@@ -12,6 +12,7 @@
 
         <TextView
             android:text="Hello"
+            android:id="@+id/tanda_detail_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

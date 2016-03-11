@@ -1,6 +1,7 @@
 package com.ahorrolibre.al01;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 public class TandaDetailActivity extends AppCompatActivity {
@@ -58,8 +60,13 @@ public class TandaDetailActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-
+            // The detail activity called via intent.
+            Intent intent = getActivity().getIntent();
             View rootView = inflater.inflate(R.layout.fragment_tanda_detail, container, false);
+            if (intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
+                String forecastStr = intent.getStringExtra((Intent.EXTRA_TEXT));
+                ((TextView) rootView.findViewById(R.id.tanda_detail_text)).setText(forecastStr);
+            }
             return rootView;
         }
     }
