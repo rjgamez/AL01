@@ -64,7 +64,8 @@ public class MainActivityFragment extends Fragment {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(getActivity(), "Presionaste Settings", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(getActivity(), "Presionaste Settings", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(getActivity(), SettingsActivity.class));
             return true;
         }
         else if (id == R.id.action_logout) {
@@ -100,14 +101,14 @@ public class MainActivityFragment extends Fragment {
         //PREGUNTA ALEX.. me da un warning aqui "Explicit Type Argument can be replaced with <>" pero el detalle lee..
         // "such <> syntax is not supported under Java 1.6 or earlier JVM's"
         // lo dejo asi?... y que es un JVM?
-        List<String> tandacardList = new ArrayList<String>(
+        List<String> tandacardList = new ArrayList<>(
                 Arrays.asList(tandacardNameArray));
 
         //Now creating the ArrayAdapter to populate the tandacard list item view with dummy data
         // BUT only doing the Tanda Name for now... later need to know how to change other data with ArrayAdapter
 
         mTandacardAdapter =
-                new ArrayAdapter<String>(
+                new ArrayAdapter<>(
                         // The current context (this fragment's parent activity)
                         getActivity(),
                         // ID of list item layout
@@ -158,8 +159,7 @@ public class MainActivityFragment extends Fragment {
             long roundedHigh = Math.round(high);
             long roundedLow = Math.round(low);
 
-            String highLowStr = roundedHigh + "/" + roundedLow;
-            return highLowStr;
+            return roundedHigh + "/" + roundedLow;
         }
 
         /**

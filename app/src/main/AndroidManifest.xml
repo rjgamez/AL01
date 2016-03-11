@@ -39,12 +39,23 @@
         <activity
             android:name=".TandaDetailActivity"
             android:label="@string/title_activity_tanda_detail"
+            android:parentActivityName=".MainActivity">
+            <!--android:theme="@style/AppTheme.NoActionBar">-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ahorrolibre.al01.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.ahorrolibre.al01.MainActivity" />
         </activity>
+
+
     </application>
 
 </manifest>
